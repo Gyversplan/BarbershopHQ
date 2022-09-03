@@ -8,8 +8,10 @@ require 'sinatra/activerecord'
 		# устанавливаем связь с БД
 set :database, "sqlite3:barbershophq.db"
 
-		# создаем сущности с помощью ActiveRecord
-class Client < ActiveRecord::database
+		# создаем сущности с помощью ActiveRecord. т.е. создаем сущность через
+		# класс Клиент, котор. наследует все методы базового класса Base
+		# через пространство имен ActiveRecord
+class Client < ActiveRecord::Base
 
 end
 
