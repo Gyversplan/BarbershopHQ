@@ -5,6 +5,7 @@ gem "sqlite3"
 gem "activerecord"
 gem "sinatra-activerecord"
 gem "sinatra-contrib"
+gem "rake"
 
 
 		# исключаем гем для разработки из доступа на руби-хостингах
