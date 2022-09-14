@@ -21,7 +21,9 @@ class Barber < ActiveRecord::Base
 end
 
 get '/' do
-
-	@barbers = Barber.all
+			# можно так
+	# @barbers = Barber.all
+			# а можно с уточнением параметров вывода
+	@barbers = Barber.order "created_at DESC"
 	erb :index
 end
